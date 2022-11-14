@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        ul {
+       .menu{
           list-style-type: none;
           margin: 0;
           padding: 0;
@@ -13,11 +13,11 @@
           background-color: #333;
         }
         
-        li {
+        .menu li {
           float: left;
         }
         
-        li a {
+        .menu li a {
           display: block;
           color: white;
           text-align: center;
@@ -25,7 +25,7 @@
           text-decoration: none;
         }
         
-        li a:hover:not(.active) {
+        .menu li a:hover:not(.active) {
           background-color: #111;
         }
         
@@ -38,7 +38,7 @@
 <body style="background-color:rgb(195, 188, 202);">
 
   
-    <ul>
+    <ul class="menu">
         <li><a  href="index.html">Főoldal</a></li>
         <li><a  href="keplink.html">Képlinkes feladat</a></li>
         <li><a class="active" href="lista.html">Lista</a></li>
