@@ -4,60 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .box1 {
-            border:1px solid black;
-            background-color: red;
-            width: 200px;
-            height: 200px;
-            float: left;
-            margin: 0px;
-            padding-left: 100px;
-        
-        }
-        .box1:hover {
-            transform: scale(1.2);
-            transition: 1s;
-        }
-        .box2:hover {
-            transform: scale(1.2);
-            transition: 1s;
-        }
-        .box3:hover {
-            transform: scale(1.2);
-            transition: 1s;
+        <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
         }
         
-        .box2 {
-            border:1px solid black;
-            background-color: rgb(0, 255, 0);
-            width: 200px;
-            height: 200px;
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #d38716;
+        }
+
+
+        div.evszak{
+            margin: 1%;
             float: left;
-            margin: 0px;
-            padding-left: 100px;
+            transition: .8s;
+            font-size: x-large;
+            font-weight: bolder;
+            text-align: center;
         }
-        .box3 {
-            border:1px solid black;
-            background-color: blue;
-            width: 600px;
-            height: 200px;
-            clear: both;
+        img{
+            border: 3px black;
+            width: 300px;
         }
- 
-    </style>
-    <title>Document</title>
+
+        div.evszak:hover{
+            transform: scale(1.1);
+        }
+
+        </style>
+    <title>Évszakok</title>
 </head>
 <body>
-    
-    <div class="box1">
-        <p>BOX1</p>
+    <ul>
+        <li><a  href="index.html">Főoldal</a></li>
+        <li><a  href="keplink.html">Képlinkes feladat</a></li>
+        <li><a  href="lista.html">Lista</a></li>
+        <li><a href="orarend.html">Órarend</a></li>
+        <li><a href="pizza.html">Rendelés</a></li>
+        <li><a href="div.html">Évszakok</a></li>
+      </ul>
+
+    <div class="evszak">
+        <img src="img/tel.jpg" alt="">
+        <p>Tél</p>
     </div>
-    <div class="box2">
-        <p>BOX2</p>
-    </div> 
-        <div class="box3">
-        <p>BOX3</p>
+    <div class="evszak">
+        <img src="img/tavasz.jpg" alt="">
+        <p>Tavasz</p>
+    </div>
+    <div class="evszak">
+        <img src="img/nyar.jpg" alt="">
+        <p>Nyár</p>
+    </div>
+    <div class="evszak">
+        <img src="img/osz.png" alt="">
+        <p>Ősz</p>
     </div>
 
 </body>
