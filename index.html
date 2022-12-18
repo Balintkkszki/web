@@ -3,75 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
     <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
+      * {
+        box-sizing: border-box;
+      }
+      
+      .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+      
+      .menu a {
+        background-color: #15ca90;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: black;
+      }
+      
+      .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+      }
+      
+      .right {
+        background-color: #15ca90;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+      }
+      
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .menu, .main, .right {
+          width: 100%;
         }
-        
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover:not(.active) {
-          background-color: #111;
-        }
-        
-        .active {
-          background-color: #15e415;
-        }
-
-        div.footer{
-          position: fixed;
-       left: 0;
-      bottom: 0;
-       width: 100%;
-       background-color: rgb(3, 172, 250);
-       color: white;
-       text-align: center;
-        }
-        </style>
+      }
+      img{
+        border: 2px solid rgb(0, 0, 0);
+            width: 280px;
+            height: 280px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+      }
+      </style>
     <title>Balint oldala</title>
 </head>
 
+<div style="background-color:#97b3b8;padding:15px;text-align:center;">
+  <h1>Üdvözöllek az oldalamon</h1>
+</div>
 
-<ul>
-  <li><a  href="index.html">Főoldal</a></li>
-  <li><a  href="keplink.html">Képlinkes feladat</a></li>
-  <li><a href="lista.html">Lista</a></li>
-  <li><a href="orarend.html">Órarend</a></li>
-  <li><a href="pizza.html">Rendelés</a></li>
-  <li><a href="div.html">Évszakok</a></li>
-</ul>
-
-<body style="background-color: rgb(138, 206, 211);">
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Főoldal</a>
+    <a href="keplink.html">Képlink</a>
+    <a href="lista.html">Lista</a>
+    <a href="orarend.html">Órarend</a>
+    <a href="pizza.html">Rendelés</a>
+    <a href="div.html">Évszakok</a>
+  </div>
     
-    <h1>Nácsa Bálint</h1>
-
-
-
+  <div class="main">
+    <h2>Nácsa Bálint</h2>
     <img src="img/sajatcollage.jpg" alt="A képen látható a kedvenc zenéim és játékom" title="Kedvenc dolgaim">
+  </div>
 
-    <div class="footer">
-      <p>Copyright NB 😲</p>
-    </div>
+  <div class="right">
+    <h2>Rólam</h2>
+    <p>A képen látható a kedvenc dolgaim</p>
+  </div>
+</div>
+
+    
+
+    <div style="background-color:#97b3b8;text-align:center;padding:10px;margin-top:7px;">© NB copyright 😎</div>
+
 </body> 
 </html>
-
