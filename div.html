@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+        <style>
       * {
         box-sizing: border-box;
       }
@@ -45,20 +46,29 @@
         }
       }
       img{
-        border: 2px solid rgb(0, 0, 0);
-            width: 280px;
-            height: 280px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        border: 1px solid rgb(0, 0, 0);
+            width: 250px;
+            height: 170px;
       }
-      </style>
-    <title>Balint oldala</title>
-</head>
+      div.evszak{
+            margin: 1%;
+            float: left;
+            transition: .8s;
+            font-size: x-large;
+            font-weight: bolder;
+            text-align: center;
+          }
 
-<div style="background-color:#97b3b8;padding:15px;text-align:center;">
-  <h1>Üdvözöllek az oldalamon</h1>
-</div>
+          div.evszak:hover{
+            transform: scale(1.1);
+        }
+        </style>
+    <title>Évszakok</title>
+</head>
+<body>
+  <div style="background-color:#97b3b8;padding:15px;text-align:center;">
+    <h1>Üdvözöllek az oldalamon</h1>
+  </div>
 
 <div style="overflow:auto">
   <div class="menu">
@@ -69,21 +79,33 @@
     <a href="pizza.html">Rendelés</a>
     <a href="div.html">Évszakok</a>
   </div>
-    
+
+
   <div class="main">
-    <h2>Nácsa Bálint</h2>
-    <img src="img/sajatcollage.jpg" alt="A képen látható a kedvenc zenéim és játékom" title="Kedvenc dolgaim">
+    <div class="evszak">
+        <img src="img/tel.jpg" alt="">
+        <p>Tél</p>
+    </div>
+    <div class="evszak">
+        <img src="img/tavasz.jpg" alt="">
+        <p>Tavasz</p>
+    </div>
+    <div class="evszak">
+        <img src="img/nyar.jpg" alt="">
+        <p>Nyár</p>
+    </div>
+    <div class="evszak">
+        <img src="img/osz.png" alt="">
+        <p>Ősz</p>
+    </div>
   </div>
 
   <div class="right">
-    <h2>Rólam</h2>
-    <p>A képen látható a kedvenc dolgaim</p>
+    <h2>Évszakok</h2>
+    <p>A négy évszak </p>
   </div>
-</div>
-
-    
-
-    <div style="background-color:#97b3b8;text-align:center;padding:10px;margin-top:7px;">© NB copyright 😎</div>
-
-</body> 
+  
+  </div>
+  <div style="background-color:#97b3b8;text-align:center;padding:10px;margin-top:7px;">© NB copyright 😎</div>
+</body>
 </html>
