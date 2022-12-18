@@ -4,64 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
     <style>
-       .menu{
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
+* {
+        box-sizing: border-box;
+      }
+      
+      .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+      
+      .menu a {
+        background-color: #15ca90;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: black;
+      }
+      
+      .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+      }
+      
+      .right {
+        background-color: #15ca90;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+      }
+      
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .menu, .main, .right {
+          width: 100%;
         }
-        
-        .menu li {
-          float: left;
-        }
-        
-        .menu li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        .menu li a:hover:not(.active) {
-          background-color: #111;
-        }
-        
-        .active {
-          background-color: #970008;
-        }
-        div.footer{
-          position: fixed;
-       left: 0;
-      bottom: 0;
-       width: 100%;
-       background-color: rgb(3, 172, 250);
-       color: white;
-       text-align: center;
-        }
+      }
+      img{
+        border: 2px solid rgb(0, 0, 0);
+            width: 280px;
+            height: 280px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+      }
         </style>
-    <title>Document</title>
+    <title>Lista</title>
 </head>
-<body style="background-color:rgb(195, 188, 202);">
+<body>
 
+  <div style="background-color:#97b3b8;padding:15px;text-align:center;">
+    <h1>Üdvözöllek az oldalamon</h1>
+  </div>
   
-    <ul class="menu">
-        <li><a  href="index.html">Főoldal</a></li>
-        <li><a  href="keplink.html">Képlinkes feladat</a></li>
-        <li><a class="active" href="lista.html">Lista</a></li>
-        <li><a href="orarend.html">Órarend</a></li>
-        <li><a href="pizza.html">Rendelés</a></li>
-        <li><a href="div.html">Évszakok</a></li>
-      </ul>
+  <div style="overflow:auto">
+    <div class="menu">
+      <a href="index.html">Főoldal</a>
+      <a href="keplink.html">Képlink</a>
+      <a href="lista.html">Lista</a>
+      <a href="orarend.html">Órarend</a>
+      <a href="pizza.html">Rendelés</a>
+      <a href="div.html">Évszakok</a>
+    </div>
 
+    <div class="main">
 
       <h1 style="color:blue">Nácsa Bálint</h1>
       <h2 style="color: chartreuse;">Listák</h2>
@@ -79,10 +90,15 @@
           <li>Kutyával játszás</li>
           <li>Biciklizés</li>
       </ul>
+    </div>
+    
+    <div class="right">
+      <h2>Lista</h2>
+      <p>A lista a kedvenc tantárgyaimat és szabadidős tevékenységeim láthatóak </p>
+    </div>
 
-      <div class="footer">
-        <p>Copyright NB 😲</p>
-      </div>
+  </div>
+  <div style="background-color:#97b3b8;text-align:center;padding:10px;margin-top:7px;">© NB copyright 😎</div>
 
 </body>
-</html>
+</html> 
